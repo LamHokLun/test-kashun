@@ -95,7 +95,7 @@ a:focus {
 	    justify-content: space-between;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: var(--titanium);
+	background-color: rgba(255,255,255,1);
 	overflow: auto;
 }
 
@@ -248,22 +248,23 @@ button:focus { outline: none; }
 .tm-footer {
 	position: absolute;
 	background-color: var(--graphite);
+	
 }
 
 .tm-footer {
     width: 100%;
     color: var(--carbon);
     z-index: 1001;
-    padding: 0 11px 12px;
+    /*padding: 0 5px 5px 0;*/
 }
 
 .tm-social-icons-container { 
-	margin-bottom: 30px; 
+	/*margin-bottom: 30px;*/
 	display: flex; 
-	position: relative; 
 	justify-content: center; 
 	align-items: center;
 }
+
 .cd-hero-slider p:last-child { margin-bottom: 0; }
 
 /* Contact */
@@ -603,7 +604,7 @@ figure.effect-sadie:hover p {
 }
 
 @media only screen and (min-width: 600px) {
-	.tm-footer { padding: 50px 0px 0px 0px; }
+	/*.tm-footer { padding: 50px 0px 0px 0px; }*/
 	.tm-copyright-text { width: auto; }
 }
 
