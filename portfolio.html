@@ -28,6 +28,7 @@
         <!-- These two JS are loaded at the top for gray scale including the loader. -->
 </head>
 <body>
+    
     <div class="cd-slider-nav">
         
         <nav class="navbar">
@@ -56,156 +57,59 @@
                 </div>                     
             </div>
         </nav>
+        
+        <div id="modal" style="background-color: rgba(227, 255, 122, 0.6); width: 100%; height: 100%; position: fixed; display: none; z-index: 1210; left: 0; top: 0; transition: all 0.5s ease-in-out;">
+            <button type="button"  class="left" style="font-size: 20px; position: fixed; display: block; left: 5vw; top: 29vw;">Left</button>
+            <img id="modal_img" src="img/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table.jpg" alt="" style="width:60vw; height:44vw; position: fixed; display: block; left: 20vw; top: 7vw; z-index: 1211; transition: all 0.5s ease-in-out">
+            <button type="button" class="right" style="font-size: 20px; position: fixed; display: block; right: 5vw; top: 29vw;">Right</button>
+            <button type="button" class="close" style="font-size: 20px; position: fixed; display: block; right: 20vw; top: 4.5vw;">Close</button>
+        </div>
+        <div class="card"> <!--Card 1st Row-->
+            <img src="img/tm-img-01-tn.jpg" id="card_1" class="card-1" alt="">
+            <img src="img/tm-img-02-tn.jpg" id="card_2" class="card-2" alt="">
+            <img src="img/tm-img-03-tn.jpg" id="card_3" class="card-3" alt="">
+            <img src="img/tm-img-04-tn.jpg" id="card_4" class="card-4" alt="">
+        </div>
+
+        <div class="card"> <!--Card 2nd Row-->
+            <img src="img/tm-img-05-tn.jpg" id="card_5" class="card-2" alt="">
+            <img src="img/tm-img-06-tn.jpg" id="card_6" class="card-3" alt="">
+            <img src="img/tm-img-07-tn.jpg" id="card_7" class="card-4" alt="">
+            <img src="img/tm-img-08-tn.jpg" id="card_8" class="card-1" alt="">
+        </div>
+
+        <div class="card"> <!--Card 3rd Row-->
+            <img src="img/tm-img-09-tn.jpg" id="card_9" class="card-3" alt="">
+            <img src="img/tm-img-10-tn.jpg" id="card_10" class="card-4" alt="">
+            <img src="img/tm-img-11-tn.jpg" id="card_11" class="card-1" alt="">
+            <img src="img/tm-img-12-tn.jpg" id="card_12" class="card-2" alt="">
+        </div>
+
+        <div class="card"> <!--Card 4th Row-->
+            <img src="img/tm-img-01-tn.jpg" id="card_13" class="card-4" alt="">
+            <img src="img/tm-img-02-tn.jpg" id="card_14" class="card-1" alt="">
+            <img src="img/tm-img-03-tn.jpg" id="card_15" class="card-2" alt="">
+            <img src="img/tm-img-04-tn.jpg" id="card_16" class="card-3" alt="">
+        </div>
+        <p id="write">11</p>
+        <footer class="tm-footer">
+            <div class="hero-grid-back" aria-hidden="true"></div>  
+            <div class="tm-footer-center">
+                <a href="#" class="tm-footer-center"><img src="img/whatsapp_icon.png" style="display: inline-block;" width=60 alt="Whatsapp"/></a>
+                <a href="#" class="tm-footer-center"><img src="img/fb_icon.png" style="display: inline-block;" width=60 alt="FB"/></a>
+                <a href="#" class="tm-footer-center"><img src="img/ig_icon.png" style="display: inline-block;" width=60 alt="IG"/></a>
+                <a href="#" class="tm-footer-center"><img src="img/linkedin_icon.png" style="display: inline-block;" width=60 alt="Linkedin"/></a>
+            </div>
+            
+            <p class="tm-copyright-text">Copyright © <span class="tm-copyright-year">2026</span> Ka Shun Decoration Limited</p>
+
+        </footer>
+
+    </div>
+    
     
 
-    <div class="cd-hero">
-        <li>
-            <div class="cd-full-width">
-                <div class="container-fluid js-tm-page-content" data-page-no="3" data-page-type="gallery">                        
-                    <div class="tm-img-gallery-container">
-                        <div class="tm-img-gallery gallery-three">
-                        <!-- Gallery Two pop up connected with JS code below -->
-                            
-                                <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">01&nbsp;&nbsp;</span><span><strong>將軍澳中心</strong></span></h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
-                                        <a href="img/tm-img-01.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-02-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">02&nbsp;&nbsp;</span><span><strong>啟欣苑</strong></span></h2>
-                                        <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-                                        <a href="img/tm-img-02.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-03-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">03&nbsp;&nbsp;</span><span><strong>沙田第一城</strong></span></h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
-                                        <a href="img/tm-img-03.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-04-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">04&nbsp;&nbsp;</span><span><strong>太古城</strong></span></h2>
-                                        <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-                                        <a href="img/tm-img-04-tn.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">05&nbsp;&nbsp;</span><span><strong>富寧花園</strong></span></h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
-                                        <a href="img/tm-img-05.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">06&nbsp;&nbsp;</span><span><strong>新都城</strong></span></h2>
-                                        <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-                                        <a href="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-img">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-07-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">07&nbsp;&nbsp;</span><span><strong>健威花園</strong></span></h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
-                                        <a href="img/tm-img-07.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-08-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">08&nbsp;&nbsp;</span><span><strong>富輝花園</strong></span></h2>
-                                        <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-                                        <a href="img/tm-img-08.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>    
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-09-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">09&nbsp;&nbsp;</span><span><strong>日出康城 峻瀅</strong></span></h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
-                                        <a href="img/tm-img-09.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-10-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">10&nbsp;&nbsp;</span><span><strong>嘉湖山莊</strong></span></h2>
-                                        <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-                                        <a href="img/tm-img-10.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-11-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">11&nbsp;&nbsp;</span><span><strong>屯門 金寶大廈</strong></span></h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
-                                        <a href="img/tm-img-11.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>
-                            <div class="grid-item">
-                                <figure class="effect-sadie">
-                                    <img src="img/tm-img-12-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title"><span style="font-size: 14px;">12&nbsp;&nbsp;</span><span><strong>荔景 悅麗苑</strong></span></h2>
-                                        <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-                                        <a href="img/tm-img-12.jpg">View more</a>
-                                    </figcaption>           
-                                </figure>
-                            </div>                                                                                              
-                        </div>                                 
-                    </div> <!-- .tm-img-gallery-container -->
-                </div>         
-            </div>  
-        </li>
-
-    </div> 
-
-    <footer class="tm-footer">
-            
-        <div class="tm-social-icons-container">
-            <a href="#" class="tm-social-icons-container"><img src="img/whatsapp_icon.png" width=50 height=50 alt="Whatsapp"/></a>
-            <a href="#" class="tm-social-icons-container"><img src="img/fb_icon.png" width=50 alt="FB"/></a>
-            <a href="#" class="tm-social-icons-container"><img src="img/ig_icon.png" width=50 alt="IG"/></a>
-            <a href="#" class="tm-social-icons-container"><img src="img/linkedin_icon.png" width=50 alt="Linkedin"/></a>
-        </div>
-        
-        <p class="tm-copyright-text">Copyright © <span class="tm-copyright-year">2026</span> Your Company</p>
-
-    </footer>
+   
 
     <script src="js/templatemo-629-nexus-script.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -352,6 +256,73 @@
         $(function() {   
             loadGoogleMap(); // Google Map
         });
+
+        /*-------Variables--------*/
+        var write = document.getElementById("write");
+        var modal = document.getElementById("modal");
+        var card_1 = document.getElementById("card_1");
+        var card_2 = document.getElementById("card_2");
+        var card_3 = document.getElementById("card_3");
+        var card_4 = document.getElementById("card_4");
+        var card_5 = document.getElementById("card_5");
+        var card_6 = document.getElementById("card_6");
+        var card_7 = document.getElementById("card_7");
+        var card_8 = document.getElementById("card_8");
+        var card_9 = document.getElementById("card_9");
+        var card_10 = document.getElementById("card_10");
+        var card_11 = document.getElementById("card_11");
+        var card_12 = document.getElementById("card_12");
+        var card_13 = document.getElementById("card_13");
+        var card_14 = document.getElementById("card_14");
+        var card_15 = document.getElementById("card_15");
+        var card_16 = document.getElementById("card_16");
+        var left = document.getElementsByClassName("left");
+        var right = document.getElementsByClassName("right");
+        var close = document.getElementsByClassName("close");
+        var modal_img = document.getElementById("modal_img")
+        var n=1; 
+        
+        /*---------Modal Image Display--------*/
+        function myOpen(){
+            modal.style.display = "block";
+        }
+        
+        card_1.addEventListener("click", myOpen);
+        card_2.addEventListener("click", myOpen);
+        card_3.addEventListener("click", myOpen);
+        card_4.addEventListener("click", myOpen);
+        card_5.addEventListener("click", myOpen);
+        card_6.addEventListener("click", myOpen);
+        card_7.addEventListener("click", myOpen);
+        card_8.addEventListener("click", myOpen);
+        card_9.addEventListener("click", myOpen);
+        card_10.addEventListener("click", myOpen);
+        card_11.addEventListener("click", myOpen);
+        card_12.addEventListener("click", myOpen);
+        card_13.addEventListener("click", myOpen);
+        card_14.addEventListener("click", myOpen);
+        card_15.addEventListener("click", myOpen);
+        card_16.addEventListener("click", myOpen);
+
+        /*---------Modal Image Left/Right Click--------*/
+
+        /*write.innerHTML = card_1.src;*/
+
+        function myClick() {
+            /*if (modal_img.src == "file:///Users/tsecharli/Desktop/Ka%20Shun%20Decoration%20Website/img/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table.jpg"){*/
+                modal_img.src = "file:///Users/tsecharli/Desktop/Ka%20Shun%20Decoration%20Website/img/tm-img-0" + n++ + "-tn.jpg"
+            }
+        /*}*/
+
+        function myClose() {
+            modal.style.display = "none";
+            return;
+        }
+        
+        left[0].addEventListener("click", myClick);
+        right[0].addEventListener("click", myClick);
+        close[0].addEventListener("click", myClose);
+
     </script>
 
 </body>
