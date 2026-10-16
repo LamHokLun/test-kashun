@@ -20,7 +20,7 @@ Primary style
   box-sizing: border-box;
 }
 
-html { font-size: 62.5%; }
+html { font-size: 0; }
 
 body {
   font-size: 1.6rem;
