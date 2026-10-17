@@ -308,19 +308,22 @@
 
         /*write.innerHTML = card_1.src;*/
 
-        function myClick() {
+        function myClickUp() {
             /*if (modal_img.src == "file:///Users/tsecharli/Desktop/Ka%20Shun%20Decoration%20Website/img/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table.jpg"){*/
                 modal_img.src = "img/tm-img-0" + n++ + "-tn.jpg";
             }
         /*}*/
-
+        function myClickDown(){
+                modal_img.src = "img/tm-img-0" + n-- + "-tn.jpg";
+            }
+            
         function myClose() {
             modal.style.display = "none";
             return;
         }
         
-        left[0].addEventListener("click", myClick);
-        right[0].addEventListener("click", myClick);
+        left[0].addEventListener("click", myClickDown);
+        right[0].addEventListener("click", myClickUp);
         close[0].addEventListener("click", myClose);
 
     </script>
